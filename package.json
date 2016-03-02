@@ -3,7 +3,7 @@
   "description": "Interact with the Postmates API.",
   "version": "0.0.1",
   "dependencies": {
-    "@trayio/falafel": "^1.0.6"
+    "@trayio/falafel": "^1.0.7"
   },
   "scripts": {
     "start": "node main.js",

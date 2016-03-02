@@ -1,5 +1,3 @@
-
-
 /*
 * Message schema
 *

@@ -345,7 +345,73 @@
         "output_schema": {
           "$schema": "http://json-schema.org/draft-04/schema#",
           "type": "object",
-          "properties": {}
+          "properties": {
+            "data": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string"
+                  },
+                  "properties": {
+                    "type": "object",
+                    "properties": {
+                      "zone_name": {
+                        "type": "string"
+                      },
+                      "market_name": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "features": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "geometry": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            },
+                            "coordinates": {
+                              "type": "array",
+                              "items": {
+                                "type": "number"
+                              }
+                            }
+                          }
+                        },
+                        "type": {
+                          "type": "string"
+                        },
+                        "properties": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      },
+                      "required": [
+                        "geometry",
+                        "type",
+                        "properties"
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "type",
+                  "properties",
+                  "features"
+                ]
+              }
+            }
+          }
         }
       }
     ]

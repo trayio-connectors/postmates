@@ -8,7 +8,7 @@ module.exports = {
 
 	title: 'Get delivery zones',
 
-	// description: 'Just a sample message.',
+	// description: 'Get the available delivery zones.',
 
 	// Input schema config
 	input: {

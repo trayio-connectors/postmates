@@ -1,6 +1,3 @@
-
-// 
-
 /*
 * Message model config.
 *
@@ -12,7 +9,7 @@ module.exports = {
 
 	method: 'post',
 
-	url: '/customers/:customer_id/deliveries',
+	url: '/customers/{{customer_id}}/deliveries',
 
 	data: {
 		

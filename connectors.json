@@ -28,6 +28,7 @@
             },
             "api_key": {
               "type": "string",
+              "default_jsonpath": "$.auth.api_key",
               "title": "Api key"
             }
           },
@@ -275,6 +276,7 @@
             },
             "api_key": {
               "type": "string",
+              "default_jsonpath": "$.auth.api_key",
               "title": "Api key"
             }
           },
@@ -480,6 +482,7 @@
             },
             "api_key": {
               "type": "string",
+              "default_jsonpath": "$.auth.api_key",
               "title": "Api key"
             }
           },
@@ -683,6 +686,7 @@
             },
             "api_key": {
               "type": "string",
+              "default_jsonpath": "$.auth.api_key",
               "title": "Api key"
             }
           },
@@ -828,6 +832,7 @@
             },
             "api_key": {
               "type": "string",
+              "default_jsonpath": "$.auth.api_key",
               "title": "Api key"
             }
           },
@@ -1073,6 +1078,7 @@
             },
             "api_key": {
               "type": "string",
+              "default_jsonpath": "$.auth.api_key",
               "title": "Api key"
             }
           },
@@ -1276,6 +1282,7 @@
             },
             "api_key": {
               "type": "string",
+              "default_jsonpath": "$.auth.api_key",
               "title": "Api key"
             }
           },

@@ -13,6 +13,205 @@
     },
     "messages": [
       {
+        "name": "cancel_delivery",
+        "title": "Cancel delivery",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "customer_id": {
+              "type": "string",
+              "title": "Customer id"
+            },
+            "delivery_id": {
+              "type": "string",
+              "title": "Delivery id"
+            },
+            "api_key": {
+              "type": "string",
+              "title": "Api key"
+            }
+          },
+          "$schema": "http://json-schema.org/draft-04/schema#",
+          "required": [
+            "customer_id",
+            "delivery_id",
+            "api_key"
+          ],
+          "advanced": [
+            "api_key"
+          ],
+          "additionalProperties": false
+        },
+        "output_schema": {
+          "$schema": "http://json-schema.org/draft-04/schema#",
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "dropoff": {
+              "type": "object",
+              "properties": {
+                "phone_number": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "notes": {
+                  "type": "string"
+                },
+                "detailed_address": {
+                  "type": "object",
+                  "properties": {
+                    "city": {
+                      "type": "string"
+                    },
+                    "country": {
+                      "type": "string"
+                    },
+                    "street_address_1": {
+                      "type": "string"
+                    },
+                    "street_address_2": {
+                      "type": "string"
+                    },
+                    "state": {
+                      "type": "string"
+                    },
+                    "zip_code": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "location": {
+                  "type": "object",
+                  "properties": {
+                    "lat": {
+                      "type": "number"
+                    },
+                    "lng": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "address": {
+                  "type": "string"
+                }
+              }
+            },
+            "updated": {
+              "type": "string"
+            },
+            "fee": {
+              "type": "number"
+            },
+            "quote_id": {
+              "type": "string"
+            },
+            "complete": {
+              "type": "boolean"
+            },
+            "courier": {
+              "type": "null"
+            },
+            "created": {
+              "type": "string"
+            },
+            "customer_signature_img_href": {
+              "type": "null"
+            },
+            "kind": {
+              "type": "string"
+            },
+            "manifest": {
+              "type": "object",
+              "properties": {
+                "description": {
+                  "type": "string"
+                }
+              }
+            },
+            "currency": {
+              "type": "string"
+            },
+            "pickup": {
+              "type": "object",
+              "properties": {
+                "phone_number": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "notes": {
+                  "type": "string"
+                },
+                "detailed_address": {
+                  "type": "object",
+                  "properties": {
+                    "city": {
+                      "type": "string"
+                    },
+                    "country": {
+                      "type": "string"
+                    },
+                    "street_address_1": {
+                      "type": "string"
+                    },
+                    "street_address_2": {
+                      "type": "string"
+                    },
+                    "state": {
+                      "type": "string"
+                    },
+                    "zip_code": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "location": {
+                  "type": "object",
+                  "properties": {
+                    "lat": {
+                      "type": "number"
+                    },
+                    "lng": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "address": {
+                  "type": "string"
+                }
+              }
+            },
+            "dropoff_identifier": {
+              "type": "string"
+            },
+            "dropoff_deadline": {
+              "type": "string"
+            },
+            "live_mode": {
+              "type": "boolean"
+            },
+            "related_deliveries": {
+              "type": "array",
+              "items": {}
+            },
+            "pickup_eta": {
+              "type": "null"
+            },
+            "dropoff_eta": {
+              "type": "null"
+            },
+            "id": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      {
         "name": "create_delivery",
         "title": "Get delivery quote",
         "input_schema": {
@@ -89,6 +288,205 @@
             "dropoff_name",
             "dropoff_address",
             "dropoff_phone_number",
+            "api_key"
+          ],
+          "advanced": [
+            "api_key"
+          ],
+          "additionalProperties": false
+        },
+        "output_schema": {
+          "$schema": "http://json-schema.org/draft-04/schema#",
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "dropoff": {
+              "type": "object",
+              "properties": {
+                "phone_number": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "notes": {
+                  "type": "string"
+                },
+                "detailed_address": {
+                  "type": "object",
+                  "properties": {
+                    "city": {
+                      "type": "string"
+                    },
+                    "country": {
+                      "type": "string"
+                    },
+                    "street_address_1": {
+                      "type": "string"
+                    },
+                    "street_address_2": {
+                      "type": "string"
+                    },
+                    "state": {
+                      "type": "string"
+                    },
+                    "zip_code": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "location": {
+                  "type": "object",
+                  "properties": {
+                    "lat": {
+                      "type": "number"
+                    },
+                    "lng": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "address": {
+                  "type": "string"
+                }
+              }
+            },
+            "updated": {
+              "type": "string"
+            },
+            "fee": {
+              "type": "number"
+            },
+            "quote_id": {
+              "type": "string"
+            },
+            "complete": {
+              "type": "boolean"
+            },
+            "courier": {
+              "type": "null"
+            },
+            "created": {
+              "type": "string"
+            },
+            "customer_signature_img_href": {
+              "type": "null"
+            },
+            "kind": {
+              "type": "string"
+            },
+            "manifest": {
+              "type": "object",
+              "properties": {
+                "description": {
+                  "type": "string"
+                }
+              }
+            },
+            "currency": {
+              "type": "string"
+            },
+            "pickup": {
+              "type": "object",
+              "properties": {
+                "phone_number": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "notes": {
+                  "type": "string"
+                },
+                "detailed_address": {
+                  "type": "object",
+                  "properties": {
+                    "city": {
+                      "type": "string"
+                    },
+                    "country": {
+                      "type": "string"
+                    },
+                    "street_address_1": {
+                      "type": "string"
+                    },
+                    "street_address_2": {
+                      "type": "string"
+                    },
+                    "state": {
+                      "type": "string"
+                    },
+                    "zip_code": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "location": {
+                  "type": "object",
+                  "properties": {
+                    "lat": {
+                      "type": "number"
+                    },
+                    "lng": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "address": {
+                  "type": "string"
+                }
+              }
+            },
+            "dropoff_identifier": {
+              "type": "string"
+            },
+            "dropoff_deadline": {
+              "type": "string"
+            },
+            "live_mode": {
+              "type": "boolean"
+            },
+            "related_deliveries": {
+              "type": "array",
+              "items": {}
+            },
+            "pickup_eta": {
+              "type": "null"
+            },
+            "dropoff_eta": {
+              "type": "null"
+            },
+            "id": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      {
+        "name": "get_delivery",
+        "title": "Get a delivery",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "customer_id": {
+              "type": "string",
+              "title": "Customer id"
+            },
+            "delivery_id": {
+              "type": "string",
+              "title": "Delivery id"
+            },
+            "api_key": {
+              "type": "string",
+              "title": "Api key"
+            }
+          },
+          "$schema": "http://json-schema.org/draft-04/schema#",
+          "required": [
+            "customer_id",
+            "delivery_id",
             "api_key"
           ],
           "advanced": [
@@ -410,6 +808,654 @@
                   "features"
                 ]
               }
+            }
+          }
+        }
+      },
+      {
+        "name": "list_deliveries",
+        "title": "List deliveries",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "customer_id": {
+              "type": "string",
+              "title": "Customer id"
+            },
+            "filter": {
+              "type": "string",
+              "title": "Filter"
+            },
+            "api_key": {
+              "type": "string",
+              "title": "Api key"
+            }
+          },
+          "$schema": "http://json-schema.org/draft-04/schema#",
+          "required": [
+            "customer_id",
+            "api_key"
+          ],
+          "advanced": [
+            "api_key"
+          ],
+          "additionalProperties": false
+        },
+        "output_schema": {
+          "$schema": "http://json-schema.org/draft-04/schema#",
+          "type": "object",
+          "properties": {
+            "data": {
+              "type": "object",
+              "properties": {
+                "url": {
+                  "type": "string"
+                },
+                "total_count": {
+                  "type": "number"
+                },
+                "object": {
+                  "type": "string"
+                },
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "status": {
+                        "type": "string"
+                      },
+                      "dropoff": {
+                        "type": "object",
+                        "properties": {
+                          "phone_number": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "notes": {
+                            "type": "string"
+                          },
+                          "detailed_address": {
+                            "type": "object",
+                            "properties": {
+                              "city": {
+                                "type": "string"
+                              },
+                              "country": {
+                                "type": "string"
+                              },
+                              "street_address_1": {
+                                "type": "string"
+                              },
+                              "street_address_2": {
+                                "type": "string"
+                              },
+                              "state": {
+                                "type": "string"
+                              },
+                              "zip_code": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "location": {
+                            "type": "object",
+                            "properties": {
+                              "lat": {
+                                "type": "number"
+                              },
+                              "lng": {
+                                "type": "number"
+                              }
+                            }
+                          },
+                          "address": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "updated": {
+                        "type": "string"
+                      },
+                      "fee": {
+                        "type": "number"
+                      },
+                      "quote_id": {
+                        "type": "string"
+                      },
+                      "complete": {
+                        "type": "boolean"
+                      },
+                      "courier": {
+                        "type": "null"
+                      },
+                      "created": {
+                        "type": "string"
+                      },
+                      "customer_signature_img_href": {
+                        "type": "null"
+                      },
+                      "kind": {
+                        "type": "string"
+                      },
+                      "manifest": {
+                        "type": "object",
+                        "properties": {
+                          "description": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "currency": {
+                        "type": "string"
+                      },
+                      "pickup": {
+                        "type": "object",
+                        "properties": {
+                          "phone_number": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "notes": {
+                            "type": "string"
+                          },
+                          "detailed_address": {
+                            "type": "object",
+                            "properties": {
+                              "city": {
+                                "type": "string"
+                              },
+                              "country": {
+                                "type": "string"
+                              },
+                              "street_address_1": {
+                                "type": "string"
+                              },
+                              "street_address_2": {
+                                "type": "string"
+                              },
+                              "state": {
+                                "type": "string"
+                              },
+                              "zip_code": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "location": {
+                            "type": "object",
+                            "properties": {
+                              "lat": {
+                                "type": "number"
+                              },
+                              "lng": {
+                                "type": "number"
+                              }
+                            }
+                          },
+                          "address": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "dropoff_identifier": {
+                        "type": "string"
+                      },
+                      "dropoff_deadline": {
+                        "type": "string"
+                      },
+                      "live_mode": {
+                        "type": "boolean"
+                      },
+                      "related_deliveries": {
+                        "type": "array",
+                        "items": {}
+                      },
+                      "pickup_eta": {
+                        "type": "null"
+                      },
+                      "dropoff_eta": {
+                        "type": "null"
+                      },
+                      "id": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "status",
+                      "dropoff",
+                      "updated",
+                      "fee",
+                      "quote_id",
+                      "complete",
+                      "courier",
+                      "created",
+                      "customer_signature_img_href",
+                      "kind",
+                      "manifest",
+                      "currency",
+                      "pickup",
+                      "dropoff_identifier",
+                      "dropoff_deadline",
+                      "live_mode",
+                      "related_deliveries",
+                      "pickup_eta",
+                      "dropoff_eta",
+                      "id"
+                    ]
+                  }
+                },
+                "next_href": {
+                  "type": "null"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "return_delivery",
+        "title": "Return delivery",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "customer_id": {
+              "type": "string",
+              "title": "Customer id"
+            },
+            "delivery_id": {
+              "type": "string",
+              "title": "Delivery id"
+            },
+            "api_key": {
+              "type": "string",
+              "title": "Api key"
+            }
+          },
+          "$schema": "http://json-schema.org/draft-04/schema#",
+          "required": [
+            "customer_id",
+            "delivery_id",
+            "api_key"
+          ],
+          "advanced": [
+            "api_key"
+          ],
+          "additionalProperties": false
+        },
+        "output_schema": {
+          "$schema": "http://json-schema.org/draft-04/schema#",
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "dropoff": {
+              "type": "object",
+              "properties": {
+                "phone_number": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "notes": {
+                  "type": "string"
+                },
+                "detailed_address": {
+                  "type": "object",
+                  "properties": {
+                    "city": {
+                      "type": "string"
+                    },
+                    "country": {
+                      "type": "string"
+                    },
+                    "street_address_1": {
+                      "type": "string"
+                    },
+                    "street_address_2": {
+                      "type": "string"
+                    },
+                    "state": {
+                      "type": "string"
+                    },
+                    "zip_code": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "location": {
+                  "type": "object",
+                  "properties": {
+                    "lat": {
+                      "type": "number"
+                    },
+                    "lng": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "address": {
+                  "type": "string"
+                }
+              }
+            },
+            "updated": {
+              "type": "string"
+            },
+            "fee": {
+              "type": "number"
+            },
+            "quote_id": {
+              "type": "string"
+            },
+            "complete": {
+              "type": "boolean"
+            },
+            "courier": {
+              "type": "null"
+            },
+            "created": {
+              "type": "string"
+            },
+            "customer_signature_img_href": {
+              "type": "null"
+            },
+            "kind": {
+              "type": "string"
+            },
+            "manifest": {
+              "type": "object",
+              "properties": {
+                "description": {
+                  "type": "string"
+                }
+              }
+            },
+            "currency": {
+              "type": "string"
+            },
+            "pickup": {
+              "type": "object",
+              "properties": {
+                "phone_number": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "notes": {
+                  "type": "string"
+                },
+                "detailed_address": {
+                  "type": "object",
+                  "properties": {
+                    "city": {
+                      "type": "string"
+                    },
+                    "country": {
+                      "type": "string"
+                    },
+                    "street_address_1": {
+                      "type": "string"
+                    },
+                    "street_address_2": {
+                      "type": "string"
+                    },
+                    "state": {
+                      "type": "string"
+                    },
+                    "zip_code": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "location": {
+                  "type": "object",
+                  "properties": {
+                    "lat": {
+                      "type": "number"
+                    },
+                    "lng": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "address": {
+                  "type": "string"
+                }
+              }
+            },
+            "dropoff_identifier": {
+              "type": "string"
+            },
+            "dropoff_deadline": {
+              "type": "string"
+            },
+            "live_mode": {
+              "type": "boolean"
+            },
+            "related_deliveries": {
+              "type": "array",
+              "items": {}
+            },
+            "pickup_eta": {
+              "type": "null"
+            },
+            "dropoff_eta": {
+              "type": "null"
+            },
+            "id": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      {
+        "name": "tip_delivery",
+        "title": "Tip a delivery",
+        "input_schema": {
+          "type": "object",
+          "properties": {
+            "customer_id": {
+              "type": "string",
+              "title": "Customer id"
+            },
+            "delivery_id": {
+              "type": "string",
+              "title": "Delivery id"
+            },
+            "tip_by_customer": {
+              "type": "string",
+              "title": "Tip by customer"
+            },
+            "api_key": {
+              "type": "string",
+              "title": "Api key"
+            }
+          },
+          "$schema": "http://json-schema.org/draft-04/schema#",
+          "required": [
+            "customer_id",
+            "delivery_id",
+            "tip_by_customer",
+            "api_key"
+          ],
+          "advanced": [
+            "api_key"
+          ],
+          "additionalProperties": false
+        },
+        "output_schema": {
+          "$schema": "http://json-schema.org/draft-04/schema#",
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "dropoff": {
+              "type": "object",
+              "properties": {
+                "phone_number": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "notes": {
+                  "type": "string"
+                },
+                "detailed_address": {
+                  "type": "object",
+                  "properties": {
+                    "city": {
+                      "type": "string"
+                    },
+                    "country": {
+                      "type": "string"
+                    },
+                    "street_address_1": {
+                      "type": "string"
+                    },
+                    "street_address_2": {
+                      "type": "string"
+                    },
+                    "state": {
+                      "type": "string"
+                    },
+                    "zip_code": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "location": {
+                  "type": "object",
+                  "properties": {
+                    "lat": {
+                      "type": "number"
+                    },
+                    "lng": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "address": {
+                  "type": "string"
+                }
+              }
+            },
+            "updated": {
+              "type": "string"
+            },
+            "fee": {
+              "type": "number"
+            },
+            "quote_id": {
+              "type": "string"
+            },
+            "complete": {
+              "type": "boolean"
+            },
+            "courier": {
+              "type": "null"
+            },
+            "created": {
+              "type": "string"
+            },
+            "customer_signature_img_href": {
+              "type": "null"
+            },
+            "kind": {
+              "type": "string"
+            },
+            "manifest": {
+              "type": "object",
+              "properties": {
+                "description": {
+                  "type": "string"
+                }
+              }
+            },
+            "currency": {
+              "type": "string"
+            },
+            "pickup": {
+              "type": "object",
+              "properties": {
+                "phone_number": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "notes": {
+                  "type": "string"
+                },
+                "detailed_address": {
+                  "type": "object",
+                  "properties": {
+                    "city": {
+                      "type": "string"
+                    },
+                    "country": {
+                      "type": "string"
+                    },
+                    "street_address_1": {
+                      "type": "string"
+                    },
+                    "street_address_2": {
+                      "type": "string"
+                    },
+                    "state": {
+                      "type": "string"
+                    },
+                    "zip_code": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "location": {
+                  "type": "object",
+                  "properties": {
+                    "lat": {
+                      "type": "number"
+                    },
+                    "lng": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "address": {
+                  "type": "string"
+                }
+              }
+            },
+            "dropoff_identifier": {
+              "type": "string"
+            },
+            "dropoff_deadline": {
+              "type": "string"
+            },
+            "live_mode": {
+              "type": "boolean"
+            },
+            "related_deliveries": {
+              "type": "array",
+              "items": {}
+            },
+            "pickup_eta": {
+              "type": "null"
+            },
+            "dropoff_eta": {
+              "type": "null"
+            },
+            "id": {
+              "type": "string"
             }
           }
         }

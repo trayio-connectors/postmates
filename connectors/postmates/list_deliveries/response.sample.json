@@ -1,119 +1,743 @@
-[
-  {
-    "status": "pickup",
-    "dropoff": {
-      "phone_number": "077-925-2679",
-      "name": "Chris",
-      "notes": "",
-      "detailed_address": {
-        "city": "San Francisco",
-        "country": "US",
-        "street_address_1": "101 Market Street",
-        "street_address_2": "",
-        "state": "CA",
-        "zip_code": "94105"
-      },
-      "location": {
-        "lat": 37.7930812,
-        "lng": -122.395944
-      },
-      "address": "101 Market Street"
-    },
-    "updated": "2016-03-02T01:16:51Z",
-    "fee": 825,
-    "quote_id": "dqt_KhNz-lrCLbH8gk",
-    "complete": false,
-    "courier": null,
-    "created": "2016-03-02T01:16:51Z",
-    "customer_signature_img_href": null,
-    "kind": "delivery",
-    "manifest": {
-      "description": "Box of kittens"
-    },
-    "currency": "usd",
-    "pickup": {
-      "phone_number": "077-925-2678",
-      "name": "Steve",
-      "notes": "",
-      "detailed_address": {
-        "city": "San Francisco",
-        "country": "US",
-        "street_address_1": "20 McAllister Street",
-        "street_address_2": "",
-        "state": "CA",
-        "zip_code": "94102"
-      },
-      "location": {
-        "lat": 37.7811375,
-        "lng": -122.4123037
-      },
-      "address": "20 McAllister Street"
-    },
-    "dropoff_identifier": "",
-    "dropoff_deadline": "2016-03-02T02:16:51Z",
-    "live_mode": false,
-    "related_deliveries": [],
-    "pickup_eta": null,
-    "dropoff_eta": null,
-    "id": "del_KhNz-l8pGEAM0k"
-  },
-  {
-    "status": "pickup",
-    "dropoff": {
-      "phone_number": "077-925-2679",
-      "name": "Chris",
-      "notes": "",
-      "detailed_address": {
-        "city": "San Francisco",
-        "country": "US",
-        "street_address_1": "101 Market Street",
-        "street_address_2": "",
-        "state": "CA",
-        "zip_code": "94105"
-      },
-      "location": {
-        "lat": 37.7930812,
-        "lng": -122.395944
-      },
-      "address": "101 Market Street"
-    },
-    "updated": "2016-03-02T01:16:51Z",
-    "fee": 825,
-    "quote_id": "dqt_KhNz-lrCLbH8gk",
-    "complete": false,
-    "courier": null,
-    "created": "2016-03-02T01:16:51Z",
-    "customer_signature_img_href": null,
-    "kind": "delivery",
-    "manifest": {
-      "description": "Box of kittens"
-    },
-    "currency": "usd",
-    "pickup": {
-      "phone_number": "077-925-2678",
-      "name": "Steve",
-      "notes": "",
-      "detailed_address": {
-        "city": "San Francisco",
-        "country": "US",
-        "street_address_1": "20 McAllister Street",
-        "street_address_2": "",
-        "state": "CA",
-        "zip_code": "94102"
-      },
-      "location": {
-        "lat": 37.7811375,
-        "lng": -122.4123037
-      },
-      "address": "20 McAllister Street"
-    },
-    "dropoff_identifier": "",
-    "dropoff_deadline": "2016-03-02T02:16:51Z",
-    "live_mode": false,
-    "related_deliveries": [],
-    "pickup_eta": null,
-    "dropoff_eta": null,
-    "id": "del_KhNz-l8pGEAM0k"
+{
+    "data": {
+      "url": "/v1/customers/cus_KhNtKtRILEWa7V/deliveries",
+      "total_count": 12,
+      "object": "list",
+      "data": [
+        {
+          "status": "delivered",
+          "dropoff": {
+            "phone_number": "077-925-2679",
+            "name": "Chris",
+            "notes": "",
+            "detailed_address": {
+              "city": "San Francisco",
+              "country": "US",
+              "street_address_1": "101 Market Street",
+              "street_address_2": "",
+              "state": "CA",
+              "zip_code": "94105"
+            },
+            "location": {
+              "lat": 37.7930812,
+              "lng": -122.395944
+            },
+            "address": "101 Market Street"
+          },
+          "updated": "2016-03-09T22:50:56Z",
+          "fee": 825,
+          "quote_id": "dqt_Ki1cGS1vcAozzk",
+          "complete": true,
+          "courier": null,
+          "created": "2016-03-09T22:48:37Z",
+          "customer_signature_img_href": null,
+          "kind": "delivery",
+          "manifest": {
+            "description": "Box of kittens"
+          },
+          "currency": "usd",
+          "pickup": {
+            "phone_number": "077-925-2678",
+            "name": "Steve",
+            "notes": "",
+            "detailed_address": {
+              "city": "San Francisco",
+              "country": "US",
+              "street_address_1": "20 McAllister Street",
+              "street_address_2": "",
+              "state": "CA",
+              "zip_code": "94102"
+            },
+            "location": {
+              "lat": 37.7811375,
+              "lng": -122.4123037
+            },
+            "address": "20 McAllister Street"
+          },
+          "dropoff_identifier": "",
+          "dropoff_deadline": "2016-03-09T23:48:37Z",
+          "live_mode": false,
+          "related_deliveries": [
+            {
+              "id": "del_Ki1bvr6fRkg4Yk",
+              "relationship": "original"
+            }
+          ],
+          "pickup_eta": null,
+          "dropoff_eta": null,
+          "id": "del_Ki1cGOpDPrqQuk"
+        },
+        {
+          "status": "returned",
+          "dropoff": {
+            "phone_number": "077-925-2678",
+            "name": "Steve",
+            "notes": "",
+            "detailed_address": {
+              "city": "San Francisco",
+              "country": "US",
+              "street_address_1": "20 McAllister Street",
+              "street_address_2": "",
+              "state": "CA",
+              "zip_code": "94102"
+            },
+            "location": {
+              "lat": 37.7811375,
+              "lng": -122.4123037
+            },
+            "address": "20 McAllister Street"
+          },
+          "updated": "2016-03-09T22:48:57Z",
+          "fee": 750,
+          "quote_id": "dqt_Ki1bvpBg6jCTH-",
+          "complete": true,
+          "courier": null,
+          "created": "2016-03-09T22:47:12Z",
+          "customer_signature_img_href": null,
+          "kind": "delivery",
+          "manifest": {
+            "description": "Box of kittens"
+          },
+          "currency": "usd",
+          "pickup": {
+            "phone_number": "077-925-2679",
+            "name": "Chris",
+            "notes": "",
+            "detailed_address": {
+              "city": "San Francisco",
+              "country": "US",
+              "street_address_1": "101 Market Street",
+              "street_address_2": "",
+              "state": "CA",
+              "zip_code": "94105"
+            },
+            "location": {
+              "lat": 37.7930812,
+              "lng": -122.395944
+            },
+            "address": "101 Market Street"
+          },
+          "dropoff_identifier": "",
+          "dropoff_deadline": "2016-03-09T23:47:11Z",
+          "live_mode": false,
+          "related_deliveries": [
+            {
+              "id": "del_Ki1bBlX81Xr1pF",
+              "relationship": "original"
+            },
+            {
+              "id": "del_Ki1cGOpDPrqQuk",
+              "relationship": "return"
+            }
+          ],
+          "pickup_eta": null,
+          "dropoff_eta": null,
+          "id": "del_Ki1bvr6fRkg4Yk"
+        },
+        {
+          "status": "delivered",
+          "dropoff": {
+            "phone_number": "077-925-2678",
+            "name": "Steve",
+            "notes": "",
+            "detailed_address": {
+              "city": "San Francisco",
+              "country": "US",
+              "street_address_1": "20 McAllister Street",
+              "street_address_2": "",
+              "state": "CA",
+              "zip_code": "94102"
+            },
+            "location": {
+              "lat": 37.7811375,
+              "lng": -122.4123037
+            },
+            "address": "20 McAllister Street"
+          },
+          "updated": "2016-03-09T22:48:16Z",
+          "fee": 750,
+          "quote_id": "dqt_Ki1bf0A4fsiNIF",
+          "complete": true,
+          "courier": null,
+          "created": "2016-03-09T22:46:04Z",
+          "customer_signature_img_href": null,
+          "kind": "delivery",
+          "manifest": {
+            "description": "Box of kittens"
+          },
+          "currency": "usd",
+          "pickup": {
+            "phone_number": "077-925-2679",
+            "name": "Chris",
+            "notes": "",
+            "detailed_address": {
+              "city": "San Francisco",
+              "country": "US",
+              "street_address_1": "101 Market Street",
+              "street_address_2": "",
+              "state": "CA",
+              "zip_code": "94105"
+            },
+            "location": {
+              "lat": 37.7930812,
+              "lng": -122.395944
+            },
+            "address": "101 Market Street"
+          },
+          "dropoff_identifier": "",
+          "dropoff_deadline": "2016-03-09T23:46:04Z",
+          "live_mode": false,
+          "related_deliveries": [
+            {
+              "id": "del_Ki1bBlX81Xr1pF",
+              "relationship": "original"
+            }
+          ],
+          "pickup_eta": null,
+          "dropoff_eta": null,
+          "id": "del_Ki1bf2x9f2jsC-"
+        },
+        {
+          "status": "delivered",
+          "dropoff": {
+            "phone_number": "077-925-2678",
+            "name": "Steve",
+            "notes": "",
+            "detailed_address": {
+              "city": "San Francisco",
+              "country": "US",
+              "street_address_1": "20 McAllister Street",
+              "street_address_2": "",
+              "state": "CA",
+              "zip_code": "94102"
+            },
+            "location": {
+              "lat": 37.7811375,
+              "lng": -122.4123037
+            },
+            "address": "20 McAllister Street"
+          },
+          "updated": "2016-03-09T22:47:56Z",
+          "fee": 750,
+          "quote_id": "dqt_Ki1b_SR1Ow1FRV",
+          "complete": true,
+          "courier": null,
+          "created": "2016-03-09T22:45:41Z",
+          "customer_signature_img_href": null,
+          "kind": "delivery",
+          "manifest": {
+            "description": "Box of kittens"
+          },
+          "currency": "usd",
+          "pickup": {
+            "phone_number": "077-925-2679",
+            "name": "Chris",
+            "notes": "",
+            "detailed_address": {
+              "city": "San Francisco",
+              "country": "US",
+              "street_address_1": "101 Market Street",
+              "street_address_2": "",
+              "state": "CA",
+              "zip_code": "94105"
+            },
+            "location": {
+              "lat": 37.7930812,
+              "lng": -122.395944
+            },
+            "address": "101 Market Street"
+          },
+          "dropoff_identifier": "",
+          "dropoff_deadline": "2016-03-09T23:45:41Z",
+          "live_mode": false,
+          "related_deliveries": [
+            {
+              "id": "del_Ki1bBlX81Xr1pF",
+              "relationship": "original"
+            }
+          ],
+          "pickup_eta": null,
+          "dropoff_eta": null,
+          "id": "del_Ki1b_M0L96HYL-"
+        },
+        {
+          "status": "returned",
+          "dropoff": {
+            "phone_number": "077-925-2679",
+            "name": "Chris",
+            "notes": "",
+            "detailed_address": {
+              "city": "San Francisco",
+              "country": "US",
+              "street_address_1": "101 Market Street",
+              "street_address_2": "",
+              "state": "CA",
+              "zip_code": "94105"
+            },
+            "location": {
+              "lat": 37.7930812,
+              "lng": -122.395944
+            },
+            "address": "101 Market Street"
+          },
+          "updated": "2016-03-09T22:46:01Z",
+          "fee": 825,
+          "quote_id": "dqt_Ki1bBraf9IpqYF",
+          "complete": true,
+          "courier": null,
+          "created": "2016-03-09T22:44:03Z",
+          "customer_signature_img_href": null,
+          "kind": "delivery",
+          "manifest": {
+            "description": "Box of kittens"
+          },
+          "currency": "usd",
+          "pickup": {
+            "phone_number": "077-925-2678",
+            "name": "Steve",
+            "notes": "",
+            "detailed_address": {
+              "city": "San Francisco",
+              "country": "US",
+              "street_address_1": "20 McAllister Street",
+              "street_address_2": "",
+              "state": "CA",
+              "zip_code": "94102"
+            },
+            "location": {
+              "lat": 37.7811375,
+              "lng": -122.4123037
+            },
+            "address": "20 McAllister Street"
+          },
+          "dropoff_identifier": "",
+          "dropoff_deadline": "2016-03-09T23:44:03Z",
+          "live_mode": false,
+          "related_deliveries": [
+            {
+              "id": "del_Ki1bvr6fRkg4Yk",
+              "relationship": "return"
+            },
+            {
+              "id": "del_Ki1bf2x9f2jsC-",
+              "relationship": "return"
+            },
+            {
+              "id": "del_Ki1b_M0L96HYL-",
+              "relationship": "return"
+            }
+          ],
+          "pickup_eta": null,
+          "dropoff_eta": null,
+          "id": "del_Ki1bBlX81Xr1pF"
+        },
+        {
+          "status": "canceled",
+          "dropoff": {
+            "phone_number": "077-925-2679",
+            "name": "Chris",
+            "notes": "",
+            "detailed_address": {
+              "city": "San Francisco",
+              "country": "US",
+              "street_address_1": "101 Market Street",
+              "street_address_2": "",
+              "state": "CA",
+              "zip_code": "94105"
+            },
+            "location": {
+              "lat": 37.7930812,
+              "lng": -122.395944
+            },
+            "address": "101 Market Street"
+          },
+          "updated": "2016-03-09T22:43:42Z",
+          "fee": 825,
+          "quote_id": "dqt_Ki1arRf4q6PFIV",
+          "complete": true,
+          "courier": null,
+          "created": "2016-03-09T22:42:37Z",
+          "customer_signature_img_href": null,
+          "kind": "delivery",
+          "manifest": {
+            "description": "Box of kittens"
+          },
+          "currency": "usd",
+          "pickup": {
+            "phone_number": "077-925-2678",
+            "name": "Steve",
+            "notes": "",
+            "detailed_address": {
+              "city": "San Francisco",
+              "country": "US",
+              "street_address_1": "20 McAllister Street",
+              "street_address_2": "",
+              "state": "CA",
+              "zip_code": "94102"
+            },
+            "location": {
+              "lat": 37.7811375,
+              "lng": -122.4123037
+            },
+            "address": "20 McAllister Street"
+          },
+          "dropoff_identifier": "",
+          "dropoff_deadline": "2016-03-09T23:42:37Z",
+          "live_mode": false,
+          "related_deliveries": [],
+          "pickup_eta": null,
+          "dropoff_eta": null,
+          "id": "del_Ki1arU22GsJVzV"
+        },
+        {
+          "status": "canceled",
+          "dropoff": {
+            "phone_number": "077-925-2679",
+            "name": "Chris",
+            "notes": "",
+            "detailed_address": {
+              "city": "San Francisco",
+              "country": "US",
+              "street_address_1": "101 Market Street",
+              "street_address_2": "",
+              "state": "CA",
+              "zip_code": "94105"
+            },
+            "location": {
+              "lat": 37.7930812,
+              "lng": -122.395944
+            },
+            "address": "101 Market Street"
+          },
+          "updated": "2016-03-09T22:41:11Z",
+          "fee": 825,
+          "quote_id": "dqt_Ki1aU6tuUwzyc-",
+          "complete": true,
+          "courier": null,
+          "created": "2016-03-09T22:41:00Z",
+          "customer_signature_img_href": null,
+          "kind": "delivery",
+          "manifest": {
+            "description": "Box of kittens"
+          },
+          "currency": "usd",
+          "pickup": {
+            "phone_number": "077-925-2678",
+            "name": "Steve",
+            "notes": "",
+            "detailed_address": {
+              "city": "San Francisco",
+              "country": "US",
+              "street_address_1": "20 McAllister Street",
+              "street_address_2": "",
+              "state": "CA",
+              "zip_code": "94102"
+            },
+            "location": {
+              "lat": 37.7811375,
+              "lng": -122.4123037
+            },
+            "address": "20 McAllister Street"
+          },
+          "dropoff_identifier": "",
+          "dropoff_deadline": "2016-03-09T23:41:00Z",
+          "live_mode": false,
+          "related_deliveries": [],
+          "pickup_eta": null,
+          "dropoff_eta": null,
+          "id": "del_Ki1aUC5sNrLA5-"
+        },
+        {
+          "status": "delivered",
+          "dropoff": {
+            "phone_number": "077-925-2679",
+            "name": "Chris",
+            "notes": "",
+            "detailed_address": {
+              "city": "San Francisco",
+              "country": "US",
+              "street_address_1": "101 Market Street",
+              "street_address_2": "",
+              "state": "CA",
+              "zip_code": "94105"
+            },
+            "location": {
+              "lat": 37.7930812,
+              "lng": -122.395944
+            },
+            "address": "101 Market Street"
+          },
+          "updated": "2016-03-09T22:42:15Z",
+          "fee": 825,
+          "quote_id": "dqt_Ki1aGDS1JS_hSF",
+          "complete": true,
+          "courier": null,
+          "created": "2016-03-09T22:40:04Z",
+          "customer_signature_img_href": null,
+          "kind": "delivery",
+          "manifest": {
+            "description": "Box of kittens"
+          },
+          "currency": "usd",
+          "pickup": {
+            "phone_number": "077-925-2678",
+            "name": "Steve",
+            "notes": "",
+            "detailed_address": {
+              "city": "San Francisco",
+              "country": "US",
+              "street_address_1": "20 McAllister Street",
+              "street_address_2": "",
+              "state": "CA",
+              "zip_code": "94102"
+            },
+            "location": {
+              "lat": 37.7811375,
+              "lng": -122.4123037
+            },
+            "address": "20 McAllister Street"
+          },
+          "dropoff_identifier": "",
+          "dropoff_deadline": "2016-03-09T23:40:04Z",
+          "live_mode": false,
+          "related_deliveries": [],
+          "pickup_eta": null,
+          "dropoff_eta": null,
+          "id": "del_Ki1aGCETJLwizk"
+        },
+        {
+          "status": "delivered",
+          "dropoff": {
+            "phone_number": "077-925-2679",
+            "name": "Chris",
+            "notes": "",
+            "detailed_address": {
+              "city": "San Francisco",
+              "country": "US",
+              "street_address_1": "101 Market Street",
+              "street_address_2": "",
+              "state": "CA",
+              "zip_code": "94105"
+            },
+            "location": {
+              "lat": 37.7930812,
+              "lng": -122.395944
+            },
+            "address": "101 Market Street"
+          },
+          "updated": "2016-03-09T22:57:21Z",
+          "fee": 825,
+          "quote_id": "dqt_Ki1_RqYeUXaYjV",
+          "complete": true,
+          "courier": null,
+          "created": "2016-03-09T22:36:35Z",
+          "customer_signature_img_href": null,
+          "kind": "delivery",
+          "manifest": {
+            "description": "Box of kittens"
+          },
+          "currency": "usd",
+          "pickup": {
+            "phone_number": "077-925-2678",
+            "name": "Steve",
+            "notes": "",
+            "detailed_address": {
+              "city": "San Francisco",
+              "country": "US",
+              "street_address_1": "20 McAllister Street",
+              "street_address_2": "",
+              "state": "CA",
+              "zip_code": "94102"
+            },
+            "location": {
+              "lat": 37.7811375,
+              "lng": -122.4123037
+            },
+            "address": "20 McAllister Street"
+          },
+          "dropoff_identifier": "",
+          "dropoff_deadline": "2016-03-09T23:36:35Z",
+          "live_mode": false,
+          "related_deliveries": [],
+          "pickup_eta": null,
+          "dropoff_eta": null,
+          "id": "del_Ki1_Rt0kctUxUF"
+        },
+        {
+          "status": "delivered",
+          "dropoff": {
+            "phone_number": "077-925-2679",
+            "name": "Chris",
+            "notes": "",
+            "detailed_address": {
+              "city": "San Francisco",
+              "country": "US",
+              "street_address_1": "101 Market Street",
+              "street_address_2": "",
+              "state": "CA",
+              "zip_code": "94105"
+            },
+            "location": {
+              "lat": 37.7930812,
+              "lng": -122.395944
+            },
+            "address": "101 Market Street"
+          },
+          "updated": "2016-03-09T22:34:25Z",
+          "fee": 825,
+          "quote_id": "dqt_Ki1ZOjryMf9Ewk",
+          "complete": true,
+          "courier": null,
+          "created": "2016-03-09T22:32:07Z",
+          "customer_signature_img_href": null,
+          "kind": "delivery",
+          "manifest": {
+            "description": "Box of kittens"
+          },
+          "currency": "usd",
+          "pickup": {
+            "phone_number": "077-925-2678",
+            "name": "Steve",
+            "notes": "",
+            "detailed_address": {
+              "city": "San Francisco",
+              "country": "US",
+              "street_address_1": "20 McAllister Street",
+              "street_address_2": "",
+              "state": "CA",
+              "zip_code": "94102"
+            },
+            "location": {
+              "lat": 37.7811375,
+              "lng": -122.4123037
+            },
+            "address": "20 McAllister Street"
+          },
+          "dropoff_identifier": "",
+          "dropoff_deadline": "2016-03-09T23:32:07Z",
+          "live_mode": false,
+          "related_deliveries": [],
+          "pickup_eta": null,
+          "dropoff_eta": null,
+          "id": "del_Ki1ZOtc6HjWWxV"
+        },
+        {
+          "status": "delivered",
+          "dropoff": {
+            "phone_number": "077-925-2679",
+            "name": "Chris",
+            "notes": "",
+            "detailed_address": {
+              "city": "San Francisco",
+              "country": "US",
+              "street_address_1": "101 Market Street",
+              "street_address_2": "",
+              "state": "CA",
+              "zip_code": "94105"
+            },
+            "location": {
+              "lat": 37.7930812,
+              "lng": -122.395944
+            },
+            "address": "101 Market Street"
+          },
+          "updated": "2016-03-02T16:17:50Z",
+          "fee": 825,
+          "quote_id": "dqt_KhRGdYfiTg7XmV",
+          "complete": true,
+          "courier": null,
+          "created": "2016-03-02T16:15:34Z",
+          "customer_signature_img_href": null,
+          "kind": "delivery",
+          "manifest": {
+            "description": "Box of kittens"
+          },
+          "currency": "usd",
+          "pickup": {
+            "phone_number": "077-925-2678",
+            "name": "Steve",
+            "notes": "",
+            "detailed_address": {
+              "city": "San Francisco",
+              "country": "US",
+              "street_address_1": "20 McAllister Street",
+              "street_address_2": "",
+              "state": "CA",
+              "zip_code": "94102"
+            },
+            "location": {
+              "lat": 37.7811375,
+              "lng": -122.4123037
+            },
+            "address": "20 McAllister Street"
+          },
+          "dropoff_identifier": "",
+          "dropoff_deadline": "2016-03-02T17:15:34Z",
+          "live_mode": false,
+          "related_deliveries": [],
+          "pickup_eta": null,
+          "dropoff_eta": null,
+          "id": "del_KhRGdj-8D3mqhk"
+        },
+        {
+          "status": "delivered",
+          "dropoff": {
+            "phone_number": "077-925-2679",
+            "name": "Chris",
+            "notes": "",
+            "detailed_address": {
+              "city": "San Francisco",
+              "country": "US",
+              "street_address_1": "101 Market Street",
+              "street_address_2": "",
+              "state": "CA",
+              "zip_code": "94105"
+            },
+            "location": {
+              "lat": 37.7930812,
+              "lng": -122.395944
+            },
+            "address": "101 Market Street"
+          },
+          "updated": "2016-03-02T01:19:08Z",
+          "fee": 825,
+          "quote_id": "dqt_KhNz-lrCLbH8gk",
+          "complete": true,
+          "courier": null,
+          "created": "2016-03-02T01:16:51Z",
+          "customer_signature_img_href": null,
+          "kind": "delivery",
+          "manifest": {
+            "description": "Box of kittens"
+          },
+          "currency": "usd",
+          "pickup": {
+            "phone_number": "077-925-2678",
+            "name": "Steve",
+            "notes": "",
+            "detailed_address": {
+              "city": "San Francisco",
+              "country": "US",
+              "street_address_1": "20 McAllister Street",
+              "street_address_2": "",
+              "state": "CA",
+              "zip_code": "94102"
+            },
+            "location": {
+              "lat": 37.7811375,
+              "lng": -122.4123037
+            },
+            "address": "20 McAllister Street"
+          },
+          "dropoff_identifier": "",
+          "dropoff_deadline": "2016-03-02T02:16:51Z",
+          "live_mode": false,
+          "related_deliveries": [],
+          "pickup_eta": null,
+          "dropoff_eta": null,
+          "id": "del_KhNz-l8pGEAM0k"
+        }
+      ],
+      "next_href": null
+    }
   }
-],
-"next_href": null
